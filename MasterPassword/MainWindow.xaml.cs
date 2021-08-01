@@ -21,5 +21,18 @@ namespace MasterPassword
         {            
             this.GeneratedPasswordTb.Text = this.metaDataBuilder.Build(PasswordBox.Password, DomainTb.Text, UserNameTb.Text, (int)PassworSizeSl.Value);
         }
+
+        private void CancelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PasswordBox.Password = string.Empty;
+            DomainTb.Text = string.Empty;
+            UserNameTb.Text = string.Empty;
+            PassworSizeSl.Value = 5;
+        }
+
+        private void CopyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(GeneratedPasswordTb.Text);
+        }
     }
 }

@@ -22,8 +22,8 @@
         <Label Content="{Binding Value, ElementName=PassworSizeSl}" x:Name="PasswordSizeValueLb" HorizontalAlignment="Left" Margin="747,156,0,0" VerticalAlignment="Top" Width="43" Height="26" HorizontalContentAlignment="Left" FontWeight="Bold"/>
         <Label Content="Generated Password:" x:Name="GeneratedPasswordLb" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="178" Height="26" FontWeight="Bold"/>
         <TextBox x:Name="GeneratedPasswordTb" HorizontalAlignment="Left" Margin="193,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="511" Height="26" IsReadOnly="True"/>
-        <Button x:Name="CopyBtn" Content="Copy" HorizontalAlignment="Left" Margin="709,200,0,0" VerticalAlignment="Top" Height="26" Width="59"/>
-        <Button x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Height="40" Width="370"/>
+        <Button x:Name="CopyBtn" Content="Copy" HorizontalAlignment="Left" Margin="709,200,0,0" VerticalAlignment="Top" Height="26" Width="59" Click="CopyBtn_Click"/>
+        <Button x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Height="40" Width="370" Click="CancelBtn_Click"/>
         <Button x:Name="GenerateBtn" Content="Generate" HorizontalAlignment="Left" Margin="398,267,0,0" VerticalAlignment="Top" Height="40" Width="370" Click="GenerateBtn_Click"/>
 
     </Grid>
