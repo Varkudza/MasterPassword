@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MasterPassword"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="MasterPassword.MainWindow"
+        mc:Ignorable="d"
+        Title="MasterPassword" Height="370" Width="795" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Master Password:" x:Name="MasterPasswordLB" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="193,22,0,0" VerticalAlignment="Top" Width="575" Height="26"/>
+        <Label Content="Domain:" x:Name="DomainLb" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="178" Height="26" FontWeight="Bold"/>
+        <TextBox x:Name="DomainTb" HorizontalAlignment="Left" Margin="193,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="575" Height="26"/>
+        <Label Content="UserName:" x:Name="UserNamelb" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Width="178" Height="26" FontWeight="Bold"/>
+        <TextBox x:Name="UserNameTb" HorizontalAlignment="Left" Margin="193,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="575" Height="26"/>
+        <Slider x:Name="PassworSizeSl" HorizontalAlignment="Left" Margin="193,160,0,0" VerticalAlignment="Top" Width="533" Maximum="30" Minimum="5" SmallChange="1" IsSnapToTickEnabled="True"/>
+        <Label Content="Password Size:" x:Name="PasswordSizeLb" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="178" Height="26" FontWeight="Bold"/>
+        <Label Content="{Binding Value, ElementName=PassworSizeSl}" x:Name="PasswordSizeValueLb" HorizontalAlignment="Left" Margin="747,156,0,0" VerticalAlignment="Top" Width="43" Height="26" HorizontalContentAlignment="Left" FontWeight="Bold"/>
+        <Label Content="Generated Password:" x:Name="GeneratedPasswordLb" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="178" Height="26" FontWeight="Bold"/>
+        <TextBox x:Name="GeneratedPasswordTb" HorizontalAlignment="Left" Margin="193,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="511" Height="26" IsReadOnly="True"/>
+        <Button x:Name="CopyBtn" Content="Copy" HorizontalAlignment="Left" Margin="709,200,0,0" VerticalAlignment="Top" Height="26" Width="59"/>
+        <Button x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Height="40" Width="370"/>
+        <Button x:Name="GenerateBtn" Content="Generate" HorizontalAlignment="Left" Margin="398,267,0,0" VerticalAlignment="Top" Height="40" Width="370" Click="GenerateBtn_Click"/>
+
+    </Grid>
+</Window>
