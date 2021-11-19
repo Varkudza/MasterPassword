@@ -1,8 +1,8 @@
-﻿using MasterPassword.Encrypt;
-using MasterPassword.Hash;
+﻿using MasterPassword.Hash;
 using MasterPassword.UseCase.MetaData;
 using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
+using MasterPassword.Encryptor.Encrypt;
 
 namespace MasterPassword
 {

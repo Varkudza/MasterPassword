@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace MasterPassword.Encrypt
+namespace MasterPassword.Encryptor.Encrypt
 {
     public class Encrypter : IEncrypter
     {

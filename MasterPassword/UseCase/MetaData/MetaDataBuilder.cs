@@ -1,8 +1,5 @@
-﻿using MasterPassword.Encrypt;
-using MasterPassword.Hash;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MasterPassword.Hash;
+using MasterPassword.Encryptor.Encrypt;
 
 namespace MasterPassword.UseCase.MetaData
 {

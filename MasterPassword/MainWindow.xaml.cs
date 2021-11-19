@@ -1,5 +1,4 @@
-﻿using MasterPassword.Hash;
-using MasterPassword.UseCase.MetaData;
+﻿using MasterPassword.UseCase.MetaData;
 using System.Windows;
 
 namespace MasterPassword
